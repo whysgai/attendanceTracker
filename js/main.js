@@ -12,6 +12,7 @@ function addStudent(){
   var newStudent = new Student($("#studentInput").val());
   classList.push(newStudent);
   $("#classList").append("<li value=\""+newStudent.studentID+"\">"+newStudent.studentName+"</li>");
+  $('#studentInput').val('');
 }
 function markStudent(){
   clickedStudent = classList[$(this).val()-1];
