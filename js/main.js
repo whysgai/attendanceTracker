@@ -33,6 +33,7 @@ function markStudent(){
 }
 function showTardy(e){
   e.preventDefault();
+  $("#sideBar > h3:first-of-type").addClass("titleReveal");
   $.each(classList,function(index,value){
     if(value.tardy){
       $("#tardyList").append("<li>"+value.studentName+"</li>");
@@ -41,6 +42,7 @@ function showTardy(e){
 }
 function showAbsent(e){
   e.preventDefault();
+  $("#sideBar > h3:nth-of-type(2n)").addClass("titleReveal");
   $.each(classList,function(index,value){
     if(value.absent){
       $("#absentList").append("<li>"+value.studentName+"</li>");

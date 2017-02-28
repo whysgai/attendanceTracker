@@ -5,33 +5,40 @@
     	<meta name="description" content="Your description goes here">
     	<meta name="keywords" content="one, two, three">
 
-		<title>Blank Template</title>
+		<title>Attendance Tracker</title>
 
 		<!-- external CSS link -->
+		<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i|Raleway:300,400,600" rel="stylesheet">
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
 
 	</head>
 	<body>
 		<div id="container">
-			<header>
-				<h1>Blank Template</h1>
-				<h2>Just another blank template</h2>
+			<header class="border">
+				<h1>Attendance Tracker</h1>
+				<h2>Keeping an eye on everyone</h2>
 			</header>
-			<section>
+			<section id="userInput" class="border">
 				<form>
 					<label for="studentInput">Student Name</label>
 					<input id="studentInput" type="text"></input>
-					<input id="submitButton" type="submit"></input>
+					<a id="submitButton" href="#" class="button">Submit</a>
+					<a id="tardyButton" href="#" class="button">Show Tardy</a>
+					<a id="absentButton" href="#" class="button">Show Absent</a>
 				</form>
-				<h3>Students:</h3>
 			</section>
-			<section>
-				<ul id="classList"></ul>
-				<a id="tardyButton" href="#">Show Tardy</a>
-				<ul	id="tardyList"></ul>
-				<a id="absentButton" href="#">Show Absent</a>
-				<ul	id="absentList"></ul>
+			<section id="infoDisplay" class="border">
+				<div id="mainDisplay" class="border">
+					<h3>Students:</h3>
+					<ul id="classList" class="border"></ul>
+				</div>
+				<div id="sideBar" class="border">
+					<h3>Tardy:</h3>
+					<ul	id="tardyList"></ul>
+					<h3>Absent:</h3>
+					<ul	id="absentList"></ul>
+				</div>
 			</section>
 			<footer>
 				&copy; Footer Goes Here
