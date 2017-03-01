@@ -15,7 +15,7 @@ function addStudent(){
     $("#mainDisplay > h3").addClass("titleReveal");
   }
   classList.push(newStudent);
-  $("#classList").append("<li value=\""+newStudent.studentID+"\">"+newStudent.studentName+"</li>");
+  $("#classList").append("<li class=\"listEntry\" value=\""+newStudent.studentID+"\">"+newStudent.studentName+"</li>");
   $('#studentInput').val('');
 }
 function markStudent(){
@@ -41,7 +41,7 @@ function showTardy(e){
   $("#sideBar > h3:first-of-type").addClass("titleReveal");
   $.each(classList,function(index,value){
     if(value.tardy){
-      $("#tardyList").append("<li>"+value.studentName+"</li>");
+      $("#tardyList").append("<li class=\"listEntry\">"+value.studentName+"</li>");
     }
   })
 }
@@ -51,7 +51,7 @@ function showAbsent(e){
   $("#sideBar > h3:nth-of-type(2n)").addClass("titleReveal");
   $.each(classList,function(index,value){
     if(value.absent){
-      $("#absentList").append("<li>"+value.studentName+"</li>");
+      $("#absentList").append("<li class=\"listEntry\">"+value.studentName+"</li>");
     }
   })
 }
