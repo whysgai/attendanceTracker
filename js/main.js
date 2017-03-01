@@ -55,6 +55,10 @@ $(document).ready(function(){
     e.preventDefault();
     addStudent();
   });
+  $("form").submit(function(e){
+    e.preventDefault();
+    addStudent();
+  });
   $("#classList").on("click","li",markStudent);
   $("#tardyButton").on("click",function(e){showTardy(e);});
   $("#absentButton").on("click",function(e){showAbsent(e);});
