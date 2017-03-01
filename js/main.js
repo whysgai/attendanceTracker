@@ -10,6 +10,10 @@ function Student (studentName){
 }
 function addStudent(){
   var newStudent = new Student($("#studentInput").val());
+  if(classList.length==0){
+    console.log("GO!");
+    $("#mainDisplay > h3").addClass("titleReveal");
+  }
   classList.push(newStudent);
   $("#classList").append("<li value=\""+newStudent.studentID+"\">"+newStudent.studentName+"</li>");
   $('#studentInput').val('');

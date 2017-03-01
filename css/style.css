@@ -103,6 +103,7 @@ h3 {
   font-weight: 700;
   font-style: italic;
   font-size: 1rem;
+  color: white;
 }
 form > label, form > input, form > a{
   font-size: 1rem;
@@ -135,5 +136,5 @@ header > p{
   font-style: italic;
 }
 .titleReveal{
-  color: blue;
+  color: black;
 }
