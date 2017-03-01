@@ -8,7 +8,7 @@
 		<title>Attendance Tracker</title>
 
 		<!-- external CSS link -->
-		<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i|Raleway:300,400,600" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i|Raleway:300,400,400i,600" rel="stylesheet">
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
 
@@ -18,14 +18,15 @@
 			<header class="border">
 				<h1>Attendance Tracker</h1>
 				<h2>Keeping an eye on everyone</h2>
+				<p>Click names once to mark tardy, twice to mark absent.</p>
 			</header>
 			<section id="userInput" class="border">
 				<form>
-					<label for="studentInput">Student Name</label>
+					<label for="studentInput">Name:</label>
 					<input id="studentInput" type="text"></input>
 					<a id="submitButton" href="#" class="button">Submit</a>
-					<a id="tardyButton" href="#" class="button">Show Tardy</a>
-					<a id="absentButton" href="#" class="button">Show Absent</a>
+					<a id="tardyButton" href="#" class="button alignright">Show Tardy</a>
+					<a id="absentButton" href="#" class="button alignright">Show Absent</a>
 				</form>
 			</section>
 			<section id="infoDisplay" class="border">

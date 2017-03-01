@@ -33,6 +33,7 @@ function markStudent(){
 }
 function showTardy(e){
   e.preventDefault();
+  $("#tardyList").empty();
   $("#sideBar > h3:first-of-type").addClass("titleReveal");
   $.each(classList,function(index,value){
     if(value.tardy){
@@ -42,6 +43,7 @@ function showTardy(e){
 }
 function showAbsent(e){
   e.preventDefault();
+  $("#absentList").empty();
   $("#sideBar > h3:nth-of-type(2n)").addClass("titleReveal");
   $.each(classList,function(index,value){
     if(value.absent){

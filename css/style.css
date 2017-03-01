@@ -34,12 +34,12 @@ Developer @GA in NYC
 
 .alignright {
 	float: right;
-	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+	/*padding: 0 0 10px 10px;*/
 }
 
 .alignleft {
 	float: left;
-	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+	/*padding: 0 10px 10px 0;*/
 }
 
 /******************************************
@@ -70,16 +70,16 @@ h1, h2, h3{
   padding: 0;
 }
 #container {
-	width: 960px;
+	width: 640px;
 	margin: auto;
 }
 #mainDisplay {
   float: left;
-  width: 66%;
+  width: 59%;
 }
 #sideBar {
   float: left;
-  width: 33%;
+  width: 40%;
 }
 /******************************************
 /* FONT STYLES
@@ -89,12 +89,14 @@ h1 {
   font-weight: 400;
   font-style: italic;
   font-size: 4rem;
+  text-align: center;
 }
 h2 {
-  font-family: "Playfair Display", serif;
-  font-weight: 700;
+  font-family: "Raleway", serif;
+  font-weight: 300;
   /*font-style: italic;*/
   font-size: 1.5rem;
+  text-align: center;
 }
 h3 {
   font-family: "Playfair Display", serif;
@@ -104,27 +106,33 @@ h3 {
 }
 form > label, form > input, form > a{
   font-size: 1rem;
-  color: black;
   text-decoration: none;
+}
+header > p{
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: .8rem;
+  text-align: center;
 }
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
 .absent{
-  color: red;
+  text-decoration: line-through;
 }
-.border{
+/*.border{
   border: thin solid black;
-}
+}*/
 .button {
   background: black;
   color: white;
-  padding: .2rem;
-  margin: 0;
+  padding: .2rem .33rem;
+  margin: 0 0 0 .1rem;
 }
 .tardy{
-  color: yellow;
+  font-style: italic;
 }
 .titleReveal{
   color: blue;
