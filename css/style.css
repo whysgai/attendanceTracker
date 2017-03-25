@@ -119,6 +119,10 @@ header > p{
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+footer a{
+  text-decoration: none;
+  color: inherit;
+}
 .absent{
   text-decoration: line-through;
 }
